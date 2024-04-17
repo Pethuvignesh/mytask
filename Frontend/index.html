@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple CRUD</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container mt-4">
+        <header>
+            <h1 class="text-center">Simple CRUD</h1>
+        </header>
+
+        <form id="item-form">
+            <div class="form-row">
+                <div class="form-group col-md-3">
+                    <input type="text" id="name" class="form-control" placeholder="Name" required>
+                </div>
+                <div class="form-group col-md-4">
+                    <input type="text" id="description" class="form-control" placeholder="Description" required>
+                </div>
+                <div class="form-group col-md-2">
+                    <input type="number" id="price" class="form-control" placeholder="Price" required>
+                </div>
+                <div class="form-group col-md-3">
+                    <button type="submit" class="btn btn-primary">Add Item</button>
+                </div>
+            </div>
+        </form>
+
+        <h2 class="mt-4">Items</h2>
+        <div class="table-responsive">
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Description</th>
+                        <th>Price</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody id="items-table-body"></tbody>
+            </table>
+        </div>
+
+        <nav aria-label="Page navigation">
+            <ul class="pagination justify-content-center mt-4">
+                <li class="page-item">
+                    <button id="prev-btn" class="page-link" aria-label="Previous">
+                        <span aria-hidden="true">&laquo;</span>
+                    </button>
+                </li>
+                <li class="page-item">
+                    <button id="next-btn" class="page-link" aria-label="Next">
+                        <span aria-hidden="true">&raquo;</span>
+                    </button>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+    <!-- Bootstrap JS and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="scripts.js"></script>
+</body>
+</html>
