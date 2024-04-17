@@ -1,4 +1,4 @@
-const baseURL = 'http://localhost:3000/items';
+const baseURL = 'http://172.20.235.64:80/items';
 const itemsPerPage = 5; // Number of items per page
 let currentPage = 1; // Current page
 
