@@ -1,0 +1,2 @@
+Frontend - http://adb78450b6bc041c097e1c74db975e3d-1270611625.ap-south-1.elb.amazonaws.com/
+Grafana - http://a449d17d7621c4a1aa68f76899671d9f-306359277.ap-south-1.elb.amazonaws.com
