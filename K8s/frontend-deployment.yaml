@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: frontend
-          image: pethuvignesh/frontend:v10
+          image: pethuvignesh/frontend:v11
           ports:
             - containerPort: 80
 
